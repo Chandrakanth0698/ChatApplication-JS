@@ -1,0 +1,1 @@
+# This repo consists of chat application that is hosted on AWS using s3, lambda, cognito, cloudfront, DynamoDb, IAM, CloudWatch and few  others on http://cbogra-chatapplication-jswebsite.s3-website-us-east-1.amazonaws.com/
