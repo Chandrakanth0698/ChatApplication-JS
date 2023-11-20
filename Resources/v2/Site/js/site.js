@@ -3,7 +3,7 @@ var ChatApp = window.ChatApp || {};
 (function scopeWrapper($) {
 
     var currentUsername = 'Student';
-
+    // we are creating a function to display chats for the currest user from json file where the chats will be saved. 
     ChatApp.populateChats = function () {
         $.get('data/conversations.json').done(function (data) {
             data.forEach(function (convo) {
@@ -19,7 +19,7 @@ var ChatApp = window.ChatApp || {};
             $('TBODY').append('<tr><td></td></tr>');
         });
     };
-
+    // we are creating a function to display messages for the logged in user on right and to sender on left
     ChatApp.loadChat = function () {
         $.get('data/conversations/' + location.hash.substring(1) + '.json').done(function (result) {
             result.messages.forEach(function (message) {
